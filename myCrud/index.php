@@ -7,6 +7,7 @@ $info = "";
 $error = $_GET["error"] ?? "0";
 $task = $_GET["task"] ?? "report";
 
+error_reporting(0);
 
 if ("edit" == $task) {
     if (!hasPrivilege()) {
